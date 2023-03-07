@@ -1,5 +1,5 @@
 import { useThree } from "@react-three/fiber";
-import { Html, Text, Scroll, ScrollControls } from '@react-three/drei';
+import { Html, Scroll, ScrollControls } from '@react-three/drei';
 import { FC, Fragment, Suspense, useMemo } from "react";
 import { TGalleryWallProps } from "../types";
 import { ArtItem } from "./ArtItem";

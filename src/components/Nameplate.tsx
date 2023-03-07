@@ -1,7 +1,5 @@
-import { useLoader, useThree } from '@react-three/fiber';
-import { Fragment, FC, useState } from 'react';
-import { Color, TextureLoader, Vector3 } from 'three';
-import { TArtItemProps } from '../types';
+import { Fragment, FC } from 'react';
+import { Color, Vector3 } from 'three';
 import { Text } from '@react-three/drei';
 
 
@@ -16,12 +14,12 @@ type TNameplateProps = {
 
 export const Nameplate: FC<TNameplateProps> = (props) => {
 
-  const { position, width = 2, height = 1, artist='unknown', title, color = 0xFAEBD7 } = props;
+  const { position, width = 1.25, height = 0.5, title, color = 0xFAEBD7 } = props;
 
   return <Fragment>
     <mesh position={position}>
-      <planeGeometry args={[1.25, 0.5]} />
-      <meshStandardMaterial color={0xFAEBD7} />
+      <planeGeometry args={[width, height]} />
+      <meshStandardMaterial color={color} />
       <Text
         position-z={0}
         scale={[0.2, 0.2, 0.2]}

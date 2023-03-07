@@ -8,6 +8,7 @@ function App() {
       <Canvas 
         shadows
         flat
+        linear
       >
         <GalleryWall 
           artList={EXHIBITION_LIST}

@@ -45,7 +45,7 @@ export const GalleryWall: FC<TGalleryWallProps> = (props) => {
       >
         <ScrollControls
           horizontal
-          pages={galleryLength / viewWidth}
+          pages={galleryLength / viewWidth + 0.3}
           distance={1}
           damping={2}
         >
@@ -74,8 +74,8 @@ export const GalleryWall: FC<TGalleryWallProps> = (props) => {
             }
 
             {/* light */}
-            <spotLight position={[10, 10, 20]} angle={0.15} penumbra={1} />
-            <ambientLight intensity={0.3} color={0xffffff} />
+            {/* <spotLight position={[10, 10, 20]} angle={0.05} penumbra={1} /> */}
+            <ambientLight intensity={0.4} color={0xffffff} />
           </Scroll>
         </ScrollControls>
       </Suspense>

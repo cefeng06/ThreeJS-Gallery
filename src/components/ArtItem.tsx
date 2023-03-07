@@ -16,10 +16,10 @@ export const ArtItem: FC<TArtItemProps> = (props) => {
     <SpotLight
       position={[position[0] - 2.5, 2.5, 1]}
       penumbra={1}
-      angle={0.5}
+      angle={0.7}
       attenuation={1}
-      anglePower={5}
-      intensity={1}
+      anglePower={3}
+      intensity={3}
       distance={10}
       castShadow
       color={0xffffff}

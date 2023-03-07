@@ -1,33 +1,40 @@
 import { TArtItem } from "./types";
+import image01 from "./assets/images/01.jpg";
+import image02 from "./assets/images/02.jpg";
+import image03 from "./assets/images/03.jpg";
+import image04 from "./assets/images/04.jpg";
+import image05 from "./assets/images/05.jpg";
+import image06 from "./assets/images/06.jpg";
+import image07 from "./assets/images/07.jpg";
 
 const EXHIBITION_LIST: TArtItem[] = [
   {
     title: 'Building',
-    path: '/images/01.jpg',
+    path: image01,
   },
   {
     title: 'Rock and Hill',
-    path: '/images/02.jpg',
+    path: image02,
   },
   {
     title: 'Ending',
-    path: '/images/03.jpg',
+    path: image03,
   },
   {
     title: 'Leasure Time',
-    path: '/images/04.jpg',
+    path: image04,
   },
   {
     title: 'Leaves',
-    path: '/images/05.jpg',
+    path: image05,
   },
   {
-    title: 'billboard',
-    path: '/images/06.jpg',
+    title: 'Billboard',
+    path: image06,
   },
   {
     title: 'Window',
-    path: '/images/07.jpg',
+    path: image07,
   },
 ];
 
